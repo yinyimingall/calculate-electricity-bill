@@ -1,1 +1,221 @@
-export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;export default undefined;
+main.svelte-1dwotxo{text-align:center;padding:.1rem;margin:0 auto}h1.svelte-1dwotxo{color:#ff3e00;text-transform:uppercase;font-size:1.8rem;letter-spacing:.2rem}.header_title.svelte-1dwotxo{margin-top:2rem}.elec_form.svelte-1dwotxo{padding:1rem}.elec_sub_title.svelte-1dwotxo{font-size:1.4rem}.table_box.svelte-1dwotxo{margin:2rem 0;display:flex;justify-content:center;overflow-x:auto}@media(min-width: 640px){main.svelte-1dwotxo{max-width:none}}
+.id_column {
+    text-align: center!important;
+}
+.common_column {
+    text-align: left!important;
+}
+.cost_column {
+    color:crimson;
+}/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* purgecss end ignore */
+@import "tailwindcss/utilities";
+
+h1,
+.h1 {
+  @apply text-5xl font-light;
+  letter-spacing: -1.5px;
+}
+
+h2,
+.h2 {
+  @apply text-4xl font-light;
+  letter-spacing: -0.5px;
+}
+
+h3,
+.h3 {
+  @apply text-3xl font-normal;
+  letter-spacing: 0px;
+}
+
+h4,
+.h4 {
+  @apply text-2xl font-normal;
+  letter-spacing: 0.25px;
+}
+
+h5,
+.h5 {
+  @apply text-xl font-normal;
+  letter-spacing: 0px;
+}
+
+h6,
+.h6 {
+  @apply text-base font-medium;
+  letter-spacing: 0.15px;
+}
+
+hr {
+  @apply border-t border-gray-400 border-solid;
+}
+
+.subtitle-1 {
+  @apply text-base;
+  letter-spacing: 0.15px;
+}
+
+.subtitle-2 {
+  @apply text-base text-sm font-medium;
+  letter-spacing: 0.15px;
+}
+
+.body-1 {
+  @apply text-base;
+  letter-spacing: 0.5px;
+}
+
+.body-2 {
+  @apply text-sm;
+  letter-spacing: 0.25px;
+}
+
+.button {
+  letter-spacing: 0.0892857143em;
+}
+
+caption,
+.caption {
+  font-size: 0.625rem;
+  letter-spacing: 0.4px;
+  display: inline-block;
+}
+
+button:focus, input:focus, li:focus, div:focus, textarea:focus {
+  outline: none;
+}
+
+.list {
+  margin-top: 2px;
+}
+
+.a {
+  @apply underline text-blue-600;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.ripple {
+	border-radius: 50%;
+	position: absolute;
+	transform: scale(0);
+}
+
+.ripple-normal {
+	animation: ripple-normal 0.6s;
+}
+
+.ripple-centered {
+  animation: ripple-centered 0.4s;
+}
+
+@keyframes ripple-normal {
+	to {
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+@keyframes ripple-centered {
+	to {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+.mode-dark {
+  @apply text-gray-100 bg-dark-500 duration-100 pointer-events-auto;
+}
+
+
+input[type="range"] {
+  --bg: var(--color-gray-200);
+  --bg-focus: var(--color-gray-200);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 4px;
+}
+
+input[type="range"]:disabled {
+  @apply bg-gray-300;
+}
+
+input[type="range"]::range-thumb {
+  -webkit-appearance: none;
+  @apply rounded-full p-1 w-5 h-5 shadow;
+  background-color: var(--bg);
+}
+
+input[type="range"]:disabled::range-thumb {
+  @apply bg-gray-400;
+}
+
+input[type="range"]::-ms-thumb {
+  margin: 0;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::range-thumb {
+  -webkit-appearance: none;
+  @apply rounded-full p-1 w-5 h-5 shadow;
+  margin-top: -0.5rem;
+  background-color: var(--bg-focus);
+}
+
+input[type="range"]:focus::range-track {
+  @apply rounded;
+  height: 4px;
+}
+
+th:first-child, td:first-child {
+  @apply text-left border-r border-gray-200;
+}
+
+th:first-child .sort-wrapper {
+  @apply justify-start;
+}
+
+th .sort {
+  @apply w-4 h-4 opacity-0;
+}
+
+th:hover .sort {
+  @apply opacity-100;
+}
+
+tr.selected {
+  @apply bg-primary-50;
+}
+
+.select {
+  @apply pb-0 mb-0 cursor-pointer;
+  height: 3.5rem;
+}
+.select.dense {
+  height: 2.7rem;
+}
+
+.code-inline {
+  @apply text-sm bg-secondary-50 text-secondary-900 rounded-sm p-1;
+  letter-spacing: 0.25px;
+}
+.p-1\/2.svelte-ixci48{padding:0.125rem}.reverse.svelte-zzky5a{transform:rotate(180deg)}.tip.svelte-zzky5a{transform:rotate(90deg)}.drawer.svelte-6qcjcu{min-width:250px}aside.svelte-6qcjcu{height:100vh}.circular.svelte-1xkiyez{animation:svelte-1xkiyez-rotate 2s linear infinite;position:relative}.path.svelte-1xkiyez{stroke-dasharray:1, 200;stroke-dashoffset:0;stroke-linecap:round;animation:svelte-1xkiyez-dash 1.5s ease-in-out infinite}@keyframes svelte-1xkiyez-rotate{100%{transform:rotate(360deg)}}@keyframes svelte-1xkiyez-dash{0%{stroke-dasharray:1, 200;stroke-dashoffset:0}50%{stroke-dasharray:89, 200;stroke-dashoffset:-35}100%{stroke-dasharray:89, 200;stroke-dashoffset:-124}}.inc.svelte-mguqwa{animation:svelte-mguqwa-increase 2s ease-in-out infinite}.dec.svelte-mguqwa{animation:svelte-mguqwa-decrease 2s 0.9s ease-in-out infinite}@keyframes svelte-mguqwa-increase{from{left:-5%;width:5%}to{left:130%;width:150%}}@keyframes svelte-mguqwa-decrease{from{left:-90%;width:90%}to{left:110%;width:10%}}.snackbar.svelte-1ym8qvd{min-width:344px}.label-top.svelte-r33x2y{line-height:0.05}.label-transition.svelte-r33x2y{transition:font-size 0.05s, line-height 0.1s}label.text-xs{font-size:0.7rem}.line.svelte-xd9zs6{height:1px}.ripple.svelte-1o8z87d{position:absolute !important}.tooltip.svelte-1n6auy7{left:50%;transform:translateX(-50%)}

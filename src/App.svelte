@@ -1,5 +1,4 @@
 <script>
-	import "smelte/src/tailwind.css" ;
 	import {Button} from "smelte";
 	import { TextField } from "smelte";
 	import { DataTable } from "smelte";
@@ -10,17 +9,17 @@
 	let data = [];
 	const dateStr = new Date().toDateString();
 	// test data
-	totalElectricity = 496;
-	totalCount = 267.3;
-	lastRoomOneDegree = 432.1;
-	lastRoomTwoDegree = 533.2;
-	lastRoomThreeDegree = 1481.8;
-	lastRoomFourDegree = 510.7;
+	// totalElectricity = 496;
+	// totalCount = 267.3;
+	// lastRoomOneDegree = 432.1;
+	// lastRoomTwoDegree = 533.2;
+	// lastRoomThreeDegree = 1481.8;
+	// lastRoomFourDegree = 510.7;
 
-	todayRoomOneDegree = 473.9;
-	todayRoomTwoDegree = 553.9;
-	todayRoomThreeDegree = 1682.4;
-	todayRoomFourDegree = 612.8;
+	// todayRoomOneDegree = 473.9;
+	// todayRoomTwoDegree = 553.9;
+	// todayRoomThreeDegree = 1682.4;
+	// todayRoomFourDegree = 612.8;
 	// test data
 	function generate() {
 		const oneUsed = todayRoomOneDegree - lastRoomOneDegree;
@@ -37,8 +36,6 @@
 		const threeCost = unitPrice * threeUsed + publicCostEveryone;
 		const fourCost = unitPrice * fourUsed + publicCostEveryone;
 
-		console.log(oneCost, twoCost, threeCost, fourCost)
-		console.log(oneCost + twoCost + threeCost + fourCost)
 
 		const resultMap = {
 			1: {used: oneUsed, cost: oneCost},
